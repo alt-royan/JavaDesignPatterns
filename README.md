@@ -20,6 +20,17 @@ Object-Oriented Software*** *Erich Gamma* and _Richard Helm_ and using the infor
   * [Flyweight](#flyweight) 
   * [Proxy](#proxy) 
 * [Behavioral](#behavioral)
+  * [Chain of responsibility](#chain-of-responsibility)
+  * [Command](#command)
+  * [Interpreter](#interpreter)
+  * [Iterator](#Iterator)
+  * [Mediator](#mediator)
+  * [Memento](#memento)
+  * [Observer](#observer)
+  * [State](#state)
+  * [Strategy](#strategy)
+  * [Template method](#template-method)
+  * [Visitor](#visitor)
 ---
 ## Creational
 
