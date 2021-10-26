@@ -1,6 +1,6 @@
 package Creation.Builder;
 
-public class Director {
+public class Publisher {
     BookBuilder bookBuilder;
 
     public Book createBook(BookBuilder builder){
@@ -14,8 +14,8 @@ public class Director {
     }
 
     public static void main(String[] args) {
-        Director dir =new Director();
-        Book book =dir.createBook(new HistoryBookBuilder());
+        Publisher publisher =new Publisher();
+        Book book =publisher.createBook(new HistoryBookBuilder());
         System.out.println(book);
     }
 }

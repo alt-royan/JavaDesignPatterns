@@ -9,7 +9,8 @@ public class DBService {
     }
     public void doOnSelect(){
         System.out.println("Selecting...");
-    }public void doOnRemove(){
+    }
+    public void doOnRemove(){
         System.out.println("Removing...");
     }
 

@@ -3,19 +3,19 @@ package Behavior.Visitor;
 public class VisitorApp {
     public static void main ( String [] args ) {
         Point p = new Point2d( 1, 2 );
-        Visitor v = new Chebyshev();
+        Visitor v = new Visitor1();
         p.accept( v );
         System.out.println( p.getMetric() );
         System.out.println("=================");
-        Visitor w = new Euclid();
+        Visitor w = new Visitor2();
         p.accept( w );
         System.out.println( p.getMetric() );
     }
 }
 
 interface Visitor {
-    public void visit ( Point2d p );
-    public void visit ( Point3d p );
+     void visit ( Point2d p );
+    void visit ( Point3d p );
 }
 
 abstract class Point {
@@ -66,7 +66,7 @@ class Point3d extends Point {
     public double getZ () { return z; }
 }
 
-class Euclid implements Visitor {
+class Visitor1 implements Visitor {
     public void visit ( Point2d p ) {
         p.setMetric( Math.sqrt( p.getX()*p.getX() + p.getY()*p.getY() ) );
     }
@@ -75,7 +75,7 @@ class Euclid implements Visitor {
     }
 }
 
-class Chebyshev implements Visitor {
+class Visitor2 implements Visitor {
     public void visit ( Point2d p ) {
         double ax = Math.abs( p.getX() );
         double ay = Math.abs( p.getY() );

@@ -4,9 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 interface Graphic {
-
     //Prints the graphic.
-    public void print();
+    void print();
 
 }
 
@@ -14,7 +13,7 @@ interface Graphic {
 class CompositeGraphic implements Graphic {
 
     //Collection of child graphics.
-    private List<Graphic> mChildGraphics = new ArrayList<Graphic>();
+    private List<Graphic> mChildGraphics = new ArrayList<>();
 
     //Prints the graphic.
     public void print() {
